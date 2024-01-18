@@ -327,7 +327,7 @@ namespace CollectionLinqAssignment
             if (schools == null)
                 return new List<School>();
 
-            var schoolsWithTopGrades = schools.Where(x => x.Students.Any(y => y.Grade > 90)).ToList();
+            var schoolsWithTopGrades = schools.Where(x => x.Students.Any(y => y.Grade > 80)).ToList();
 
             return schoolsWithTopGrades;
         }
